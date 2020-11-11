@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<header>
+  <h1 class="header"> Survey form</h1>
+  <p id="description">Description</p>
+</header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+         type="text"
+         name="name"
+         id="name"
+         class="form-control"
+         placeholder="Enter your name"
+         required
+    />
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input
+         type="email"
+         name="email"
+         id="email"
+         class="form-control"
+         placeholder="Enter your Email"
+         required
+    />
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Number</label>
+    <input
+         type="number"
+         name="number"
+         id="number"
+         class="form-control"
+         placeholder="Enter a number"
+         min="0"
+         max="99"
+    />
+  </div>
+  <div class="form-group">
+    <p>This is a dropdown</p>
+    <select id="dropdown" name="select" class="form-control" required>
+      <option disabled selected value>Select option</option>
+      <option value="student">Option 1</option>
+      <option value="job">Option 2</option>
+      <option value="learner">Option 3</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>These are radio buttons</p>
+    <label>
+      <input
+          name="radio-buttons"
+          value="option1"
+          type="radio"
+          class="input-radio"
+          checked
+        />Option 1
+      </label>
+      <label>
+        <input
+          name="radio-buttons"
+          value="option2"
+          type="radio"
+          class="input-radio"
+        />Option 2
+      </label>
+      <label>
+        <input
+          name="radio-buttons"
+          value="option3"
+          type="radio"
+          class="input-radio"
+        />Option 3
+      </label>
+  </div>
+  <div class="form-group">
+    <p>These are checkboxes<span class="clue">(Check all that apply)</span></p>
+    <label>
+      <input
+          name="checkbox"
+          value="check1"
+          type="checkbox"
+          class="input-checkbox"
+       />Checkbox 1
+    </label>
+    <label>
+      <input
+          name="checkbox"
+          value="check2"
+          type="checkbox"
+          class="input-checkbox"
+       />Checkbox 2
+    </label>
+    <label>
+      <input
+          name="checkbox"
+          value="check3"
+          type="checkbox"
+          class="input-checkbox"
+       />Checkbox 3
+    </label>
+  </div>
+  <div class="form-group">
+    <p>Additional text areas</p>
+      <textarea
+        id="text-area"
+        class="input-textarea"
+        name="text"
+        placeholder="User can add aditional comments here"
+      ></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+  </div>
+</form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
